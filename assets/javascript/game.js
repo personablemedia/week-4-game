@@ -26,21 +26,21 @@ window.onload = function () {
 
   //button onclicks
   $('#redbtn').click(function(){
-    $('#myScore').text(parseInt($("#redbtn img").val()) + parseInt($('#myScore').text()));
+    $('#myScore').text((parseInt($("#redbtn img").val()) + parseInt($('#myScore').text())));
     check();
-  };
+  });
   $('#bluebtn').click(function(){
     $('#myScore').text(parseInt($("#bluebtn img").val()) + parseInt($('#myScore').text()));
     check();
-  };
+  });
   $('#greenbtn').click(function(){
     $('#myScore').text(parseInt($("#greenbtn img").val()) + parseInt($('#myScore').text()));
     check();
-  };
+  });
   $('#yellowbtn').click(function(){
     $('#myScore').text(parseInt($("#yellowbtn img").val()) + parseInt($('#myScore').text()));
     check();
-  };
+  });
 
  check = function () {
     //check to see if myscore is equal to or greater than cpuNum
