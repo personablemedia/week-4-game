@@ -45,11 +45,13 @@ window.onload = function () {
  check = function () {
     //check to see if myscore is equal to or greater than cpuNum
     if (parseInt($('#myScore').text()) == parseInt($('#cpuScore').text())) {
-      $('#myWins').text((wins + 1));
+      wins += 1;
+      $('#myWins').text((wins));
       newGame();
     }
     else if (parseInt($('#myScore').text()) > parseInt($('#cpuScore').text())) {
-      $('#myLoses').text((loses + 1));
+      loses += 1;
+      $('#myLoses').text((loses));ß
       newGame();
     }
 
