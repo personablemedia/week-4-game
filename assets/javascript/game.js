@@ -51,7 +51,7 @@ window.onload = function () {
     }
     else if (parseInt($('#myScore').text()) > parseInt($('#cpuScore').text())) {
       loses += 1;
-      $('#myLoses').text((loses));ß
+      $('#myLoses').text((loses));
       newGame();
     }
 
